@@ -19,10 +19,10 @@ This is a web application for booking available meeting rooms for specific time 
 ## Setup Instructions
 
 Clone the repository:
-git clone <repository-url>
+git clone https://github.com/shaheryar3/verylnk_assessment_final
 
 Navigate to the project directory:
-cd room-booking-system
+cd verylnk_assessment_final
 
 Install dependencies:
 npm install
