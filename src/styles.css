@@ -1,0 +1,90 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Center the entire content horizontally */
+  align-items: center; /* Center the entire content vertically */
+  min-height: 100vh; /* Ensure full viewport height */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Left-align container content */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Room Slots Styles */
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the time slots horizontally */
+  gap: 10px; /* Add space between time slots */
+}
+
+.time-slot {
+  flex: 0 0 calc(33.33% - 10px); /* Adjust width if necessary */
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.time-slot.booked {
+  background-color: #ffc0cb;
+  border-color: #ff6b81;
+}
+
+.time-slot button {
+  background-color: green;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Unbook button styles */
+.time-slot .unbook-button {
+  background-color: #ff6b81;
+}
+
+/* Booked by styles */
+.booked-by {
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .time-slot {
+    flex: 0 0 calc(50% - 10px);
+  }
+}
